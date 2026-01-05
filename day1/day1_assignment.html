@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        html, body {
+        height: 100%;
+        }
+
+        body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        }
+
+        .header {
+        background: whitesmoke;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        }
+
+        .logo {
+        font-weight: bold;
+        }
+
+        .nav a {
+        margin-left: 8px;
+        text-decoration: none;
+        color: black;
+        }
+
+        .products {
+        display: flex;
+        min-height: 200px;
+        }
+
+        .product{
+            flex: 1;
+            padding: 20px;
+        }
+
+        .product h2 {
+        color: white;
+        margin-bottom: 10px;
+        }   
+
+        #pink {
+        background: pink;
+        }
+
+        #blue {
+        background: blue;
+        }
+
+        #green {
+        background: green;
+        }
+
+        .content{
+            display: flex;
+            flex: 1;
+        }
+
+        .main {
+        flex: 4;
+        background: yellow;
+        padding: 20px;
+        }
+
+        .main h2{
+            margin-bottom: 10px;
+        }
+
+        .sidebar {
+        flex: 1;
+        background: #0000ff;
+        color: #000;
+        padding: 20px;
+        }
+        
+        .sidebar h2 {
+        margin-bottom: 10px;
+        }
+
+        .sidebar ul {
+        list-style: square;
+        margin-left: 20px;
+        }
+
+        .footer {
+        background: lightblue;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo"><h1>LOGO</h1></div>
+        <nav class="nav">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <section class="products">
+        <div class="product" id="pink">
+        <h2>Product Title</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+
+        <div class="product" id="blue">
+        <h2>Product Title</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+        </p>
+        </div>
+
+        <div class="product" id="green">
+        <h2>Product Title</h2>
+        <p>corem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        </div>
+    </section>
+    <section class="content">
+        <main class="main">
+        <h2>Title</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Explicabo dolor consectetur error a officiis! Perspiciatis ducimus 
+            a dolores iste consectetur totam quaerat quasi officiis. 
+            Architecto illum corporis quod nisi natus?
+        </p>
+        </main>
+
+        <aside class="sidebar">
+        <h2>Sidebar</h2>
+        <ul>
+            <li>facebook</li>
+            <li>google</li>
+        </ul>
+        </aside>
+    </section>
+    <footer class="footer">
+        Page Footer
+    </footer>
+</body>
+</html> 
