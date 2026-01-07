@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+:root {
+    --cus-orange: #ff6a21;
+    --cus-black: #000;
+    --cus-white: #fff;
+    --cus-gray: #808080;
+    --cus-dark: #07074d;
+    --cus-light: #ddd;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+}
+
+
+
+header {
+    background: var(--cus-orange);
+}
+
+
+
+.container {
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1300px;
+}
+
+
+
+.nav ul {
+    display: flex;
+    height: 50px;
+    list-style: none;
+}
+
+.nav li {
+    flex: 1;
+}
+
+.nav a {
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+    color: var(--cus-white);
+    font-weight: 500;
+    border-right: 2px solid rgba(255, 255, 255, 0.6);
+}
+
+.nav ul li:last-child a {
+    border-right: none;
+}
+
+
+
+.cards {
+    text-align: center;
+    padding: 50px 80px;
+}
+
+.cards h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--cus-black);
+    margin-bottom: 5px;
+}
+
+.cards h2 span {
+    color: var(--cus-gray);
+}
+
+.divider {
+    width: 60px;
+    height: 2px;
+    background-color: var(--cus-orange);
+    margin: 0 auto 30px;
+}
+
+
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.card {
+    position: relative;
+}
+
+.card img {
+    width: 100%;
+    display: block;
+}
+
+.card-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    color: var(--cus-white);
+    background: rgba(0, 0, 0, 0.6);
+    text-align: left;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: 0.3s ease;
+}
+
+.card-text h3 {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.card:hover .card-text {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card:first-child .card-text {
+    opacity: 1;
+    transform: translateY(0);
+    transition: none;
+}
+
+
+
+.contact-section {
+    background: url("../images/bg1.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 60px 0;
+    color: var(--cus-white);
+}
+
+.contact-section h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.contact-section h2 span {
+    color: var(--cus-gray);
+}
+
+.contact-form {
+    margin: auto;
+}
+
+.contact-form label {
+    display: block;
+    margin: 15px 0 5px;
+    font-weight: 500;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+}
+
+.form-gp {
+    display: flex;
+    gap: 20px;
+    margin-top: 5px;
+}
+
+.form-gp label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: normal;
+}
+
+textarea {
+    resize: none;
+}
+
+.btn-group {
+    margin-top: 20px;
+}
+
+.contact-form button {
+    padding: 10px 25px;
+    border: none;
+    background: var(--cus-orange);
+    color: var(--cus-white);
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.contact-form button.reset {
+    background: darkred;
+}
+
+.contact-form button:hover {
+    opacity: 0.85;
+}
+
+
+
+.Num-card-sec {
+    padding: 60px 0;
+    background: var(--cus-white);
+}
+
+.Num-card-sec h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.Num-card-sec h2 span {
+    color: var(--cus-gray);
+}
+
+.number-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.number-card {
+    background: var(--cus-dark);
+    color: var(--cus-white);
+    padding: 40px;
+}
+
+.number-card h1 {
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.number-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: var(--cus-orange);
+}
+
+.number-card p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--cus-light);
+}
+
+.number-card:first-child {
+    background: #ff9f43;
+    color: var(--cus-black);
+}
+
+.number-card:first-child h3,
+.number-card:first-child p {
+    color: var(--cus-black);
+}
+
+
+
+footer {
+    background: var(--cus-black);
+    color: var(--cus-white);
+    text-align: center;
+    padding: 15px;
+}
