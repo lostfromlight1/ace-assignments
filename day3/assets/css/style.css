@@ -240,6 +240,7 @@ textarea {
     background: var(--cus-dark);
     color: var(--cus-white);
     padding: 40px;
+    transition: 1s;
 }
 
 .number-card h1 {
@@ -271,6 +272,9 @@ textarea {
     color: var(--cus-black);
 }
 
+.number-card:hover {
+    padding-top: 10px;
+}
 
 
 footer {
