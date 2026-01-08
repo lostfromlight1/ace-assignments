@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Dashboard</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+<header>
+<div class="navbar">
+    <h1><a>DASHBOARD</a></h1>
+    <div>
+        <i class="fa-solid fa-envelope"><a href="#message"></a></i>
+        <i class="fa-solid fa-bell"><a href="#noti"></a></i>
+        <i class="fa-solid fa-user"><a href="#profile"></a></i>
+    </div>
+</div>
+</header>
+
+<main>
+<div class="container">
+    <div class="sidebar">
+        <ul>
+            <li><i class="fa-solid fa-layer-group"></i><a>Layout</a></li>
+            <li><i class="fa-solid fa-table"></i><a>Report Table</a></li>
+            <li><i class="fa-solid fa-chart-line"></i><a>Chart</a></li>
+            <li><i class="fa-solid fa-wpforms"></i><a>Form</a></li>
+            <li><i class="fa-solid fa-file-lines"></i><a>Logs</a></li>
+        </ul>
+
+        <ul>
+            <li><i class="fa-solid fa-layer-group"></i><a>Layout</a></li>
+            <li><i class="fa-solid fa-table"></i><a>Report Table</a></li>
+            <li><i class="fa-solid fa-chart-line"></i><a>Chart</a></li>
+            <li><i class="fa-solid fa-wpforms"></i><a>Form</a></li>
+            <li><i class="fa-solid fa-file-lines"></i><a>Logs</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <section class="registration">
+            <h2>Registration Form</h2>
+            <div class="card">
+                <form class="contact-form">
+                        <label>Name</label>
+                        <input type="text" placeholder="Enter your name" required>
+
+                        <label>Email</label>
+                        <input type="email" placeholder="Enter your email" required>
+
+                        <label>Date of Birth</label>
+                        <input type="date">
+
+                        <label>Phone Number</label>
+                        <input type="tel" placeholder="Enter phone number">
+
+                        <label>Gender:</label>
+                        <div class="form-gp">
+                        <label>
+                            <input type="radio" name="gender" value="male" checked> Male
+                        </label>
+                        <label>
+                            <input type="radio" name="gender" value="female"> Female
+                        </label>
+                        </div>
+
+                        <label>Favorite Programming Language</label>
+                        <div class="form-gp">
+                        <label><input type="checkbox"> HTML</label>
+                        <label><input type="checkbox"> CSS</label>
+                        <label><input type="checkbox"> JavaScript</label>
+                        <label><input type="checkbox"> React</label>
+                        </div>
+
+                        <label>Choose a Color:</label>
+                        <select>
+                        <option>Red</option>
+                        <option>Green</option>
+                        <option>Blue</option>
+                        </select>
+
+                        <label>Message:</label>
+                        <textarea rows="4" placeholder="Enter your message"></textarea>
+
+                        <div class="btn-group">
+                        <button type="submit">Submit</button>
+                        <button type="reset" class="reset">Reset</button>
+                        </div>
+                </form>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>Copyright © 2024</p>
+            <div>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Condition</a>
+            </div>
+        </footer>
+
+    </div>
+</div>
+</main>
+
+</body>
+</html>
