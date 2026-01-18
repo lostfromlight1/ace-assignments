@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="./assets/css/output.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+<div class="bg-gray-100 min-h-screen flex flex-col">
+    <header class="bg-white shadow sticky top-0 z-50">
+        <nav class="flex items-center justify-between px-6 py-4">
+            <div class="flex items-center gap-4">
+                <button id="menuBtn" class="text-xl">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <a href="./index.html" class="font-dancing text-xl font-bold text-orange-500">
+                    Dashboard
+                </a>
+            </div>
+
+            <ul class="flex items-center gap-6 text-black">
+                <li class="relative">
+                    <button id="mailBtn">
+                        <i class="fa-solid fa-envelope"></i>
+                    </button>
+
+                    <div id="mailBox"
+                        class="absolute right-0 mt-3 w-40 bg-gray-200 border rounded shadow hidden">
+                        <ul>
+                            <li class="px-4 py-2 border-b border-black hover:bg-gray-300">
+                                Link1
+                            </li>
+                            <li class="px-4 py-2 border-b border-black hover:bg-gray-300">
+                                Link2
+                            </li>
+                            <li class="px-4 py-2 border-b border-black  hover:bg-gray-300">
+                                Link3
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#"><i class="fa-solid fa-bell"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="flex flex-1">
+
+        <aside id="sidebar"
+            class="w-1/5 bg-black text-white h-[calc(100vh-60px)] overflow-y-auto  hidden flex-shrink-0">
+            <ul class="p-6 space-y-6">
+
+                <a href="../src/index.html" class="block">
+                    <li class="flex items-center gap-3 hover:text-orange-400">
+                        <i class="fa-solid fa-house"></i> Home
+                    </li>
+                </a>
+
+                <a href="#" class="block">
+                    <li class="flex items-center gap-3 hover:text-orange-400">
+                        <i class="fa-solid fa-table"></i> Tables
+                    </li>
+                </a>
+
+                <a href="./components/products.html" class="block">
+                    <li class="flex items-center gap-3 hover:text-orange-400">
+                        <i class="fa-solid fa-box"></i> Products
+                    </li>
+                </a>
+
+                <a href="./components/faq.html" class="block">
+                    <li class="flex items-center gap-3 hover:text-orange-400">
+                        <i class="fa-solid fa-circle-question"></i> FAQ
+                    </li>
+                </a>
+
+                <a href="./components/contact.html" class="block">
+                    <li class="flex items-center gap-3 hover:text-orange-400">
+                        <i class="fa-solid fa-envelope"></i> Contact
+                    </li>
+                </a>
+
+                <a href="#" class="block">
+                    <li class="flex items-center gap-3 hover:text-orange-400">
+                        <i class="fa-solid fa-blog"></i> Blogs
+                    </li>
+                </a>
+
+                <a href="#" class="block">
+                    <li class="flex items-center gap-3 hover:text-orange-400">
+                        <i class="fa-solid fa-gear"></i> Services
+                    </li>
+                </a>
+
+            </ul>
+        </aside>
+
+        <div class="flex flex-col flex-1 w-4/5 h-[calc(100vh-60px)] overflow-y-auto">
+
+            <main class="flex-1 p-8">
+                <h2 class="text-3xl font-semibold mb-6">Profile</h2>
+
+                <div class="bg-white shadow rounded-lg p-6">
+
+                    <div class="flex gap-6 border-b pb-3 mb-4">
+                        <button class="tab-btn active-tab" data-tab="overview">
+                            Overview
+                        </button>
+                        <button class="tab-btn" data-tab="setting">
+                            Setting
+                        </button>
+                        <button class="tab-btn" data-tab="password">
+                            Change Password
+                        </button>
+                    </div>
+
+                    <div id="overview" class="tab-content">
+                        <h3 class="font-semibold mb-2">Overview Content</h3>
+                        <p class="text-gray-600">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Dignissimos fugiat laudantium, placeat sunt necessitatibus error.
+                        </p>
+                    </div>
+
+                    <div id="setting" class="tab-content hidden">
+                        <h3 class="font-semibold mb-4">Profile Settings</h3>
+
+                        <div class="space-y-4">
+                            <input type="text" placeholder="Username"
+                                class="w-full border p-3 rounded">
+                            <input type="email" placeholder="Email"
+                                class="w-full border p-3 rounded">
+                            <button class="bg-orange-500 text-white px-6 py-2 rounded">
+                                Save Changes
+                            </button>
+                        </div>
+                    </div>
+                    <div id="password" class="tab-content hidden">
+                        <h3 class="font-semibold mb-4">Change Password</h3>
+
+                        <div class="space-y-4">
+                            <input type="password" placeholder="Current Password"
+                                class="w-full border p-3 rounded">
+                            <input type="password" placeholder="New Password"
+                                class="w-full border p-3 rounded">
+                            <input type="password" placeholder="Confirm Password"
+                                class="w-full border p-3 rounded">
+
+                            <button class="bg-orange-500 text-white px-6 py-2 rounded">
+                                Update Password
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+                
+            </main>
+
+            <footer class="bg-gray-200 text-sm px-6 py-4 flex justify-between">
+                <span>© Right 2024</span>
+                <div class="space-x-4">
+                    <a href="#" class="hover:underline">Privacy Policy</a>
+                    <a href="#" class="hover:underline">Terms & Condition</a>
+                </div>
+            </footer>
+
+        </div>
+    </div>
+</div>
+<script src="./assets/js/script.js"></script>
+</body>
+</html>

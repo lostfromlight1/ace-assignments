@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="../assets/css/output.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+<div class="bg-gray-100 min-h-screen flex flex-col">
+    <header class="bg-white shadow sticky top-0 z-50">
+        <nav class="flex items-center justify-between px-6 py-4">
+            <div class="flex items-center gap-4">
+                <button id="menuBtn" class="text-xl">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <a href="../index.html" class="font-dancing text-xl font-bold text-orange-500">
+                    Dashboard
+                </a>
+            </div>
+
+            <ul class="flex items-center gap-6 text-black">
+                <li class="relative">
+                    <button id="mailBtn">
+                        <i class="fa-solid fa-envelope"></i>
+                    </button>
+
+                    <div id="mailBox"
+                        class="absolute right-0 mt-3 w-40 bg-gray-200 border rounded shadow hidden">
+                        <ul>
+                            <li class="px-4 py-2 border-b border-black hover:bg-gray-300">
+                                Link1
+                            </li>
+                            <li class="px-4 py-2 border-b border-black hover:bg-gray-300">
+                                Link2
+                            </li>
+                            <li class="px-4 py-2 border-b border-black  hover:bg-gray-300">
+                                Link3
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#"><i class="fa-solid fa-bell"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="flex flex-1">
+
+        <aside id="sidebar"
+            class="w-1/5 bg-black text-white h-[calc(100vh-60px)] overflow-y-auto  hidden flex-shrink-0">
+            <ul class="p-6 space-y-6">
+
+                <a href="../index.html" class="block">
+                    <li class="flex items-center gap-3 hover:text-orange-400">
+                        <i class="fa-solid fa-house"></i> Home
+                    </li>
+                </a>
+
+                <a href="#" class="block">
+                    <li class="flex items-center gap-3 hover:text-orange-400">
+                        <i class="fa-solid fa-table"></i> Tables
+                    </li>
+                </a>
+
+                <a href="./products.html" class="block">
+                    <li class="flex items-center gap-3 hover:text-orange-400">
+                        <i class="fa-solid fa-box"></i> Products
+                    </li>
+                </a>
+
+                <a href="./faq.html" class="block">
+                    <li class="flex items-center gap-3 hover:text-orange-400">
+                        <i class="fa-solid fa-circle-question"></i> FAQ
+                    </li>
+                </a>
+
+                <a href="./contact.html" class="block">
+                    <li class="flex items-center gap-3 hover:text-orange-400">
+                        <i class="fa-solid fa-envelope"></i> Contact
+                    </li>
+                </a
+
+                <a href="#" class="block">
+                    <li class="flex items-center gap-3 hover:text-orange-400">
+                        <i class="fa-solid fa-blog"></i> Blogs
+                    </li>
+                </a>
+
+                <a href="#" class="block">
+                    <li class="flex items-center gap-3 hover:text-orange-400">
+                        <i class="fa-solid fa-gear"></i> Services
+                    </li>
+                </a>
+            </ul>
+        </aside>
+
+        <div class="flex flex-col flex-1 w-4/5 h-[calc(100vh-60px)] overflow-y-auto">
+
+            <main class="flex-1 p-8">
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+                    <div>
+                        <h2 class="text-2xl font-semibold mb-4">Basic Products</h2>
+
+                        <div class="accordion-item mb-2">
+                            <div class="accordion-header bg-blue-700 text-white px-4 py-3 flex justify-between cursor-pointer">
+                                <span>Classic Margherita Pizza</span>
+                                <span class="accordion-icon">+</span>
+                            </div>
+                            <div class="accordion-content hidden p-4 bg-white text-gray-700">
+                                Preheat oven to 475°F (245°C). Spread sauce, add mozzarella and basil.
+                                Bake until golden and serve hot.
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mb-2">
+                            <div class="accordion-header bg-blue-700 text-white px-4 py-3 flex justify-between cursor-pointer">
+                                <span>Vegetarian Stir-Fry</span>
+                                <span class="accordion-icon">+</span>
+                            </div>
+                            <div class="accordion-content hidden p-4 bg-white text-gray-700">
+                                Stir-fry mixed vegetables with soy sauce and garlic. Serve with rice.
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <div class="accordion-header bg-blue-700 text-white px-4 py-3 flex justify-between cursor-pointer">
+                                <span>Chocolate Chip Cookies</span>
+                                <span class="accordion-icon">+</span>
+                            </div>
+                            <div class="accordion-content hidden p-4 bg-white text-gray-700">
+                                Cream butter and sugar, add eggs, fold in chocolate chips and bake.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h2 class="text-2xl font-semibold mb-4">Recipes 1</h2>
+
+                        <div class="accordion-item mb-2">
+                            <div class="accordion-header bg-blue-700 text-white px-4 py-3 flex justify-between cursor-pointer">
+                                <span>Chicken Alfredo Pasta</span>
+                                <span class="accordion-icon">+</span>
+                            </div>
+                            <div class="accordion-content hidden p-4 bg-white text-gray-700">
+                               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mb-2">
+                            <div class="accordion-header bg-blue-700 text-white px-4 py-3 flex justify-between cursor-pointer">
+                                <span>Mango Salsa Chicken</span>
+                                <span class="accordion-icon">+</span>
+                            </div>
+                            <div class="accordion-content hidden p-4 bg-white text-gray-700">
+                                Grilled chicken topped with fresh mango salsa.
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <div class="accordion-header bg-blue-700 text-white px-4 py-3 flex justify-between cursor-pointer">
+                                <span>Quinoa Salad with Avocado</span>
+                                <span class="accordion-icon">+</span>
+                            </div>
+                            <div class="accordion-content hidden p-4 bg-white text-gray-700">
+                                Healthy quinoa mixed with avocado and lemon dressing.
+                            </div>
+                        </div>
+                    </div>
+
+                     <div>
+                        <h2 class="text-2xl font-semibold mb-4">Recipes 2</h2>
+
+                        <div class="accordion-item mb-2">
+                            <div class="accordion-header bg-blue-700 text-white px-4 py-3 flex justify-between cursor-pointer">
+                                <span>Chicken Alfredo Pasta</span>
+                                <span class="accordion-icon">+</span>
+                            </div>
+                            <div class="accordion-content hidden p-4 bg-white text-gray-700">
+                               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mb-2">
+                            <div class="accordion-header bg-blue-700 text-white px-4 py-3 flex justify-between cursor-pointer">
+                                <span>Mango Salsa Chicken</span>
+                                <span class="accordion-icon">+</span>
+                            </div>
+                            <div class="accordion-content hidden p-4 bg-white text-gray-700">
+                                Grilled chicken topped with fresh mango salsa.
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <div class="accordion-header bg-blue-700 text-white px-4 py-3 flex justify-between cursor-pointer">
+                                <span>Quinoa Salad with Avocado</span>
+                                <span class="accordion-icon">+</span>
+                            </div>
+                            <div class="accordion-content hidden p-4 bg-white text-gray-700">
+                                Healthy quinoa mixed with avocado and lemon dressing.
+                            </div>
+                        </div>
+                    </div>
+
+                     <div>
+                        <h2 class="text-2xl font-semibold mb-4">Recipes 3</h2>
+
+                        <div class="accordion-item mb-2">
+                            <div class="accordion-header bg-blue-700 text-white px-4 py-3 flex justify-between cursor-pointer">
+                                <span>Chicken Alfredo Pasta</span>
+                                <span class="accordion-icon">+</span>
+                            </div>
+                            <div class="accordion-content hidden p-4 bg-white text-gray-700">
+                               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mb-2">
+                            <div class="accordion-header bg-blue-700 text-white px-4 py-3 flex justify-between cursor-pointer">
+                                <span>Mango Salsa Chicken</span>
+                                <span class="accordion-icon">+</span>
+                            </div>
+                            <div class="accordion-content hidden p-4 bg-white text-gray-700">
+                                Grilled chicken topped with fresh mango salsa.
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <div class="accordion-header bg-blue-700 text-white px-4 py-3 flex justify-between cursor-pointer">
+                                <span>Quinoa Salad with Avocado</span>
+                                <span class="accordion-icon">+</span>
+                            </div>
+                            <div class="accordion-content hidden p-4 bg-white text-gray-700">
+                                Healthy quinoa mixed with avocado and lemon dressing.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </main>
+
+
+            <footer class="bg-gray-200 text-sm px-6 py-4 flex justify-between">
+                <span>© Right 2024</span>
+                <div class="space-x-4">
+                    <a href="#" class="hover:underline">Privacy Policy</a>
+                    <a href="#" class="hover:underline">Terms & Condition</a>
+                </div>
+            </footer>
+
+        </div>
+    </div>
+</div>
+<script src="../assets/js/script.js"></script>
+</body>
+</html>
